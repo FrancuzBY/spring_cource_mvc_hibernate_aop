@@ -12,7 +12,7 @@
     <title>All Employees</title>
 </head>
 <body>
-    <h2>All Employees</h2>
+<h2>All Employees</h2>
 <br>
 
 <table>
@@ -22,7 +22,7 @@
         <th>Department</th>
         <th>Salary</th>
     </tr>
-    <c:forEach var = "emp" items="${allEmps}">
+    <c:forEach var="emp" items="${allEmps}">
         <tr>
             <td>${emp.name}</td>
             <td>${emp.surname}</td>
@@ -31,8 +31,11 @@
         </tr>
     </c:forEach>
 
-
 </table>
+
+<br>
+<input type="button" value="Add"
+       onclick="window.location.href = 'addNewEmployee'">
 
 </body>
 </html>
